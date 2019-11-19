@@ -1,9 +1,7 @@
 # TWRP device tree for Lenovo Smart Tab M10 wifi (TB-X605F)
 
 ## Release info
-DO NOT INSTALL - COMPLETELY AT YOUR OWN RISK
-
-This is still in development.  It is currently pre-alpha.  There's a lot of testing to do.
+This is still in development.  It is currently pre-alpha.  Install at your own risk.
 
 This is an unofficial build.
 
@@ -32,14 +30,11 @@ USB | USB-C charging/storage/OTG
 Release Date | August 2018
 
 
-** This device tree can be used to build TWRP for Lenovo Smart Tab M10 wifi (TB-X605F)**
-** This is experimental.  Do NOT install, until a RELEASE version is available **
-
 To build:
 
 ```
 . build/envsetup.sh
-lunch omni_tb-x605f-eng
+lunch omni_X605F-eng
 make clean 
 mka recoveryimage
 ```
