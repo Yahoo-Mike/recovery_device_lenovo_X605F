@@ -3,7 +3,7 @@
 ## Release info
 This is still in development.  It is currently pre-alpha.  Install at your own risk.
 
-This is an unofficial build.
+This is an unofficial build.  Build with TWRP for Android 8.1.
 
 ### About Device
 

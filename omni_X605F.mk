@@ -19,7 +19,7 @@ PRODUCT_RELEASE_NAME := X605
 ALLOW_MISSING_DEPENDENCIES := true
 
 # version
-TW_DEVICE_VERSION ?= 0 (encryption defunct) TB-X605F [$(shell date -u +"%Y%0m%0d.%H%M")]
+TW_DEVICE_VERSION ?= 0 TB-X605F (API $(PLATFORM_SDK_VERSION)) [$(shell date -u +"%Y%0m%0d.%H%M")]
 
 # inherit the usual stuff...
 $(call inherit-product, build/target/product/embedded.mk)
@@ -33,4 +33,7 @@ PRODUCT_DEVICE := X605F
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-X605F
 PRODUCT_MANUFACTURER := Lenovo
+
+#so that OTA #3 won't abort
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_NUMBER="TB-X605F_USR_S210097_190927_Q00332_ROW"
 
