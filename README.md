@@ -1,9 +1,9 @@
 # TWRP device tree for Lenovo Smart Tab M10 wifi (TB-X605F)
 
 ## Release info
-This is still in development.  It is currently pre-alpha.  Install at your own risk.
+This is an unoffical build.  It is does not unencrypt /data.  Install at your own risk.
 
-This is an unofficial build.  Build with TWRP for Android 8.1.
+Build with TWRP for Android 9.0.
 
 ### About Device
 
