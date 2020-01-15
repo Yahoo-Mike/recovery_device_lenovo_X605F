@@ -104,5 +104,6 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 200
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/7000000.ssusb/7000000.dwc3/gadget/lun0/file"
+# TARGET_USE_CUSTOM_LUN_FILE_PATH causes compile-time error in TWRP for 9.0
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/7000000.ssusb/7000000.dwc3/gadget/lun0/file"
 
