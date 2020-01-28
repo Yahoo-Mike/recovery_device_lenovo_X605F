@@ -3,7 +3,7 @@
 ## Release info
 This is an unoffical build.  It is does not unencrypt /data.  Install at your own risk.
 
-Build with TWRP for Android 9.0.
+Build with TWRP for Android 8.1.
 
 ### About Device
 
