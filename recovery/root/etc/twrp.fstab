@@ -14,7 +14,9 @@
 /firmware        vfat              /dev/block/bootdevice/by-name/modem      flags=fsflags=ro;mounttodecrypt
 /modem           emmc              /dev/block/bootdevice/by-name/modem      flags=display="Firmware Image";backup=1
 
-/persist         ext4              /dev/block/bootdevice/by-name/persist    flags=backup=1;display="Persist" 
+/persist         ext4              /dev/block/bootdevice/by-name/persist    flags=display="Persist";backup=1
+/misc            emmc              /dev/block/bootdevice/by-name/misc       flags=backup=1
+/frp             emmc              /dev/block/bootdevice/by-name/config     flags=display="frp (config)"
 
 /external_sd     auto              /dev/block/mmcblk1p1                     flags=display="MicroSD";storage;wipeingui;removable
 /usb-otg         auto              /dev/block/sda1                          flags=display="USB OTG";storage;wipeingui;removable
