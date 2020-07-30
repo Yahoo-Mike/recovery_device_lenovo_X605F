@@ -1,9 +1,9 @@
 # TWRP device tree for Lenovo Smart Tab M10 wifi (TB-X605F)
 
 ## Release info
-This is an unoffical build.  It is does not unencrypt /data.  Install at your own risk.
+This is an unoffical build.  Install at your own risk.
 
-Build with TWRP for Android 9.0.
+For more information, see the [XDA Developer's thread](https://forum.xda-developers.com/thinkpad-tablet/development/recovery-twrp-3-3-x-lenovo-smart-tab-m10-t4005859) . 
 
 ### About Device
 
@@ -35,6 +35,5 @@ To build:
 ```
 . build/envsetup.sh
 lunch omni_X605F-eng
-make clean 
 mka recoveryimage
 ```

@@ -85,6 +85,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/dsp:/dsp /vendor/firmware_mnt:/firmware
 
+# decryption
+TW_INCLUDE_CRYPTO := true
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+
 # TWRP specific build flags
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -93,14 +98,18 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-# TW_HAS_EDL_MODE for LMSA - adds "EDL" button under Reboot
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_NTFS_3G := true
 
 # disable mouse cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
 
-TW_THEME := portrait_hdpi
+# landscape
+TW_THEME := landscape_hdpi
+TW_ROTATION := 90
+RECOVERY_TOUCHSCREEN_SWAP_XY := true
+RECOVERY_TOUCHSCREEN_FLIP_Y := true
+
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 200
 # TARGET_USE_CUSTOM_LUN_FILE_PATH causes compile-time error in TWRP for 9.0
