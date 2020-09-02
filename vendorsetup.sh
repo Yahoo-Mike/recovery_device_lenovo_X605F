@@ -30,5 +30,5 @@ add_lunch_combo omni_X605F-eng
 # This overrides PLATFORM_SECURITY_PATCH in build/make/core/version_defaults.mk,
 # also ensuring that PLATFORM_SECURITY_PATCH_TIMESTAMP is calculated correctly.
 # If PLATFORM_SECURITY_PATCH_TIMESTAMP is incorrect, Keymaster crashes with 'Configure failed'
-export PLATFORM_SECURITY_PATCH=2020-04-01
+export PLATFORM_SECURITY_PATCH=2020-08-01
 
