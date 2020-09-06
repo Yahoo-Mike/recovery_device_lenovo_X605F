@@ -59,8 +59,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_TAGS_OFFSET := 0x0000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 
-# Lenovo have not released kernel source for tb-x605f, use prebuilt...
-TARGET_PREBUILT_KERNEL := device/lenovo/X605F/prebuilt/zImage
+TARGET_PREBUILT_KERNEL := device/lenovo/X605F/prebuilt/Image.gz-dtb
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
