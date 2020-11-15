@@ -88,6 +88,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := /vendor/dsp:/dsp /vendor/firmware_mnt:/firmware
 TW_INCLUDE_CRYPTO := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+PLATFORM_SECURITY_PATCH := 2099-12-31
 
 # TWRP specific build flags
 BOARD_USES_QCOM_HARDWARE := true
